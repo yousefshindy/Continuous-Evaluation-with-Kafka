@@ -13,6 +13,17 @@ Observing a distribution of 43.47% to 56.53% between Attacks and Non-Attacks, I 
 ### **Model Training and Evaluation**
 The data was split into training and testing datasets (80% to 20% ratio), and performance metrics, with a focus on F1-score, were established. Decision Tree and XGBoost models were selected and compared based on various feature sets. XGBoost emerged as the champion model, excelling with Mutual Information features.
 
+```markdown
++------------------------------------------------------------------------------+
+|                                      F1                                      |
++----------------+--------------+-------------+----------------+---------------+
+|     Model      | All Features | MI Features | ANOVA Features | Chi2 Features |
++----------------+--------------+-------------+----------------+---------------+
+| Decision Tree  |   0.49035    |   0.80547   |    0.80562     |    0.80557    |
+|    XGBoost     |   0.80547    |   0.80559   |    0.80554     |    0.80554    |
++----------------+--------------+-------------+----------------+---------------+
+```
+
 ### **Hyperparameter Tuning**
 Fine-tuning was applied to both Decision Tree and XGBoost models using ANOVA and Mutual Information features, respectively. Results showed that XGBoost outperformed Decision Tree on the testing data, indicating better generalization.
 
