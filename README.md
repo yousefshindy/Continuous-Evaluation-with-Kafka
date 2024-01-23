@@ -58,7 +58,3 @@ The Dynamic Model consistently outperforms the Static Model, particularly when t
 The Dynamic Model exhibits notable advantages, including continuous improvement through adaptation to new data, leveraging the incremental learning capabilities of XGBoost for streaming data, and consistently outperforming the Static Model across various metrics. However, there are associated limitations to consider. Continuous learning introduces the risk of overfitting to recent data, particularly if the model is overly flexible. The effectiveness of the retraining process is dependent on the quality of the initial model, and an inferior initial model may hinder significant improvements. Additionally, the retraining process increases the time taken by the dynamic model after each iteration, potentially posing challenges for long-running processes.
 
 ![image](https://github.com/yousefshindy/Continuous-Evaluation-with-Kafka/assets/26123408/25e1b67e-095d-4ccf-9dd0-e8c8c00f778d)
-
-
-
-
