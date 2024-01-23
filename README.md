@@ -27,6 +27,17 @@ The data was split into training and testing datasets (80% to 20% ratio), and pe
 ### **Hyperparameter Tuning**
 Fine-tuning was applied to both Decision Tree and XGBoost models using ANOVA and Mutual Information features, respectively. Results showed that XGBoost outperformed Decision Tree on the testing data, indicating better generalization.
 
+```markdown
++----------------------------------------------------------+
+|                Tuned Models on test data                 |
++---------------+----------+---------+---------+-----------+
+|     Model     | Accuracy |    F1   |  Recall | Percision |
++---------------+----------+---------+---------+-----------+
+| Decision Tree | 0.79015  | 0.80551 | 0.99980 |  0.67444  |
+|    XGBoost    | 0.79020  | 0.80556 | 0.99987 |  0.67449  |
++---------------+----------+---------+---------+-----------+
+```
+
 ## **Dynamic Model**
 ### **Data Processing and Cleaning**
 For each iteration, the model reads 1000 rows from Kafka, cleans the data, and transforms it using the scaler previously fitted in the Static Model. The read_1000_rows and clean_df functions play a crucial role in this data processing phase.
