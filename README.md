@@ -51,9 +51,13 @@ If the F1-score of the Dynamic Model drops below the threshold, the model underg
 ### **Results and Analysis**
 The Dynamic Model consistently outperforms the Static Model, particularly when the F1-score falls below the predefined threshold. The retraining process, facilitated by the continuous learning capabilities of XGBoost, ensures that the model adapts to evolving patterns in the data.
 
+![image](https://github.com/yousefshindy/Continuous-Evaluation-with-Kafka/assets/26123408/a9020aab-d35b-4490-b292-925c56bdf779)
+
+
 ### **Advantages and Limitations**
 The Dynamic Model exhibits notable advantages, including continuous improvement through adaptation to new data, leveraging the incremental learning capabilities of XGBoost for streaming data, and consistently outperforming the Static Model across various metrics. However, there are associated limitations to consider. Continuous learning introduces the risk of overfitting to recent data, particularly if the model is overly flexible. The effectiveness of the retraining process is dependent on the quality of the initial model, and an inferior initial model may hinder significant improvements. Additionally, the retraining process increases the time taken by the dynamic model after each iteration, potentially posing challenges for long-running processes.
 
+![image](https://github.com/yousefshindy/Continuous-Evaluation-with-Kafka/assets/26123408/25e1b67e-095d-4ccf-9dd0-e8c8c00f778d)
 
 
 
